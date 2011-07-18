@@ -1,0 +1,12 @@
+ocurl
+=====
+
+07/17/2011
+
+mirror of http://sourceforge.net/projects/ocurl/
+
+CHANGES :
+
+        * build with oasis (which solve the dynlink issue)
+
+william.le-ferrand@polytechnique.edu
