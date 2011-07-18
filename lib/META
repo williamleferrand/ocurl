@@ -1,0 +1,9 @@
+# OASIS_START
+# DO NOT EDIT (digest: 04e27b88f415c7c70a32e374c40171aa)
+version = "0.0.1"
+description = "binding to curl"
+archive(byte) = "curl.cma"
+archive(native) = "curl.cmxa"
+exists_if = "curl.cma"
+# OASIS_STOP
+

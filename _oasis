@@ -1,0 +1,18 @@
+OASISFormat: 0.1
+Name: ocurl
+Version: 0.0.1
+LicenseFile: COPYING
+License: PROP
+Authors: 
+BuildTools: ocamlbuild
+Plugins: DevFiles (0.2), META (0.2)
+Synopsis: binding to curl
+
+Library curl
+  Path: lib
+  Modules: Curl
+  CCLib: 
+  CSources: curl-helper.c
+  CCOpt: -fPIC
+  CompiledObject: best
+  BuildDepends: 
