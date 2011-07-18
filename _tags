@@ -1,8 +1,13 @@
 # OASIS_START
-# DO NOT EDIT (digest: 85515bb43214ee562a109586cd3d2aae)
+# DO NOT EDIT (digest: b1e17dd7f99fe03d1b6aeeb07101cfa3)
 # Library curl
 "lib": include
 <lib/*.ml{,i}>: oasis_library_curl_ccopt
 "lib/curl-helper.c": oasis_library_curl_ccopt
+<lib/curl.{cma,cmxa}>: oasis_library_curl_cclib
+"lib/libcurl.lib": oasis_library_curl_cclib
+"lib/dllcurl.dll": oasis_library_curl_cclib
+"lib/libcurl.a": oasis_library_curl_cclib
+"lib/dllcurl.so": oasis_library_curl_cclib
 <lib/curl.{cma,cmxa}>: use_libcurl
 # OASIS_STOP

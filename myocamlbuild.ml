@@ -1,5 +1,5 @@
 (* OASIS_START *)
-(* DO NOT EDIT (digest: 0786682f9bdda05a11c38e0f4c9f8f3b) *)
+(* DO NOT EDIT (digest: 0311effe13adbb62028db7e02980887f) *)
 module OASISGettext = struct
 # 21 "/Users/hypios/reloaded/pub/oasis-0.2.0/src/oasis/OASISGettext.ml"
   
@@ -456,7 +456,11 @@ let package_default =
      flags =
        [
           (["oasis_library_curl_ccopt"; "compile"],
-            [(OASISExpr.EBool true, S [A "-ccopt"; A "-fPIC"])])
+            [(OASISExpr.EBool true, S [A "-ccopt"; A "-fPIC"])]);
+          (["oasis_library_curl_cclib"; "link"],
+            [(OASISExpr.EBool true, S [A "-cclib"; A "-lcurl"])]);
+          (["oasis_library_curl_cclib"; "ocamlmklib"; "c"],
+            [(OASISExpr.EBool true, S [A "-lcurl"])])
        ];
      }
   ;;

@@ -11,8 +11,8 @@ Synopsis: binding to curl
 Library curl
   Path: lib
   Modules: Curl
-  CCLib: 
+  CCLib: -lcurl
   CSources: curl-helper.c
-  CCOpt: -fPIC
+  CCOpt: -fPIC 
   CompiledObject: best
   BuildDepends: 
